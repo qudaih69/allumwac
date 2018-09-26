@@ -7,7 +7,7 @@ $yel="\033[1;33m";
 $blu="\033[1;34m";
 $whi="\033[0;37m";
 
-if (isset($argv[1]) && is_numeric($argv[1]) && abs($argv[1]) <= 30) {
+if (isset($argv[1]) && is_numeric($argv[1]) && abs($argv[1]) <= 30 && abs($argv[1]) >= 11) {
     
     function affichage($nbr_Allumettes)
     {      
@@ -184,5 +184,5 @@ if (isset($argv[1]) && is_numeric($argv[1]) && abs($argv[1]) <= 30) {
     
     jeu($argv[1]);
 } else {
-    echo 'veillez entrer une valeur numerique inferieur ou egale a 30.'.PHP_EOL;
+    echo $red.'veillez entrer une valeur numerique inferieur 31 et supérieur à 10.'.PHP_EOL;
 }
